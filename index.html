@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동물병원 타이머 관리</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <h1>동물병원 타이머 관리</h1>
+    <div class="container">
+        <div class="left">
+            <h2>진료 타이머 설정</h2>
+            <input type="text" id="checkup-name" placeholder="환자 이름">
+            <input type="number" id="checkup-time" placeholder="시간(분)" min="0">
+            <button onclick="addTime('checkup')">10분 추가</button>
+            <button onclick="setCheckupTimer()">진료 시간 설정</button>
+            <div id="checkup-schedule">진료 예정 시간: 설정되지 않음</div>
+        </div>
+        <div class="right">
+            <h2>약 조제 타이머 설정</h2>
+            <input type="text" id="prescription-name" placeholder="환자 이름">
+            <input type="number" id="prescription-time" placeholder="시간(분)" min="0">
+            <button onclick="addTime('prescription')">10분 추가</button>
+            <button onclick="setPrescriptionTimer()">조제 시간 설정</button>
+            <div id="prescription-schedule">조제 예정 시간: 설정되지 않음</div>
+        </div>
+    </div>
+    <div class="nav-container">
+        <a href="index.html">홈</a>
+        <a href="checkup.html">진료 타이머</a>
+        <a href="prescription.html">약 조제 타이머</a>
+        <a href="settings.html">설정</a>
+    </div>
+</body>
+</html>
